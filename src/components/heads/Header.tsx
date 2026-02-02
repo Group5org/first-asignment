@@ -3,16 +3,31 @@ import React from "react";
 const Header: React.FC = () => {
   return (
     <header className="bg-white shadow">
-      <div className="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8 flex justify-between items-center"> 
-        <h1 className="text-3xl font-bold text-gray-900">My Application Header</h1>
+      <div className="max-w-7xl mx-auto py-4 px-4 sm:px-6 lg:px-8 
+                      flex flex-col sm:flex-row 
+                      sm:justify-between sm:items-center gap-4">
 
-        <div className="flex gap-4 right-0 mt-auto text-lg font-medium">
-          <a href="#" className="hover:text-pink-500 hover:bg-pink-100 p-2 rounded-md">work</a>
-          <a href="#" className="hover:text-pink-500 hover:bg-pink-100 p-2 rounded-md">Blog</a>
-          <a href="#" className="hover:text-pink-500 hover:bg-pink-100 p-2 rounded-md">Contact</a>
+        {/* Title */}
+        <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 text-center sm:text-left">
+          My Application Header
+        </h1>
+
+        {/* Navigation */}
+        <div className="flex justify-center sm:justify-end gap-2 sm:gap-4 text-base sm:text-lg font-medium">
+          <a href="#" className="hover:text-pink-500 hover:bg-pink-100 px-3 py-2 rounded-md">
+            Work
+          </a>
+          <a href="#" className="hover:text-pink-500 hover:bg-pink-100 px-3 py-2 rounded-md">
+            Blog
+          </a>
+          <a href="#" className="hover:text-pink-500 hover:bg-pink-100 px-3 py-2 rounded-md">
+            Contact
+          </a>
         </div>
+
       </div>
     </header>
   );
-}
+};
+
 export default Header;
