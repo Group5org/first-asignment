@@ -1,5 +1,5 @@
 import React from "react";
-import { FaInstagram, FaFacebookF, FaTiktok, FaTwitter } from "react-icons/fa";
+import { FaInstagram, FaFacebookF, FaTiktok, FaTwitter, FaArrowRight } from "react-icons/fa";
 
 const Cradspage: React.FC = () => {
   return (
@@ -31,9 +31,12 @@ const Cradspage: React.FC = () => {
           <p className="text-gray-600 mb-4 text-sm sm:text-base">
             A deep dive into the world of React Hooks and how they can simplify your code.
           </p>
-          <button className="bg-pink-500 text-white px-4 py-2 rounded-md hover:bg-pink-600">
-            Read More
-          </button>
+         <button className="group bg-pink-500 text-white px-4 py-2 rounded-md hover:bg-pink-600 flex items-center">
+  Read More
+  <FaArrowRight className="ml-2 transition-transform duration-200 group-hover:translate-x-1" />
+</button>
+
+
         </div>
 
         {/* Card 2 */}
@@ -49,9 +52,12 @@ const Cradspage: React.FC = () => {
           <p className="text-gray-600 mb-4 text-sm sm:text-base">
             An in-depth comparison of CSS Grid and Flexbox for modern web layouts.
           </p>
-          <button className="bg-pink-500 text-white px-4 py-2 rounded-md hover:bg-pink-600">
-            Read More
-          </button>
+         
+          <button className="group bg-pink-500 text-white px-4 py-2 rounded-md hover:bg-pink-600 flex items-center">
+  Read More
+  <FaArrowRight className="ml-2 transition-transform duration-200 group-hover:translate-x-1" />
+</button>
+
         </div>
 
         {/* Card 3 */}
@@ -67,20 +73,21 @@ const Cradspage: React.FC = () => {
           <p className="text-gray-600 mb-4 text-sm sm:text-base leading-6">
             Learn the basics of TypeScript and how it can improve your JavaScript code quality.
           </p>
-          <button className="bg-pink-500 text-white px-4 py-2 rounded-md hover:bg-pink-600">
+          <button className="group bg-pink-500 text-white px-4 py-2 rounded-md hover:bg-pink-600 flex items-center">
             Read More
+            <FaArrowRight className="ml-2 transition-transform duration-200 group-hover:translate-x-1" />
           </button>
         </div>
 
       </div>
 
       {/* Footer */}
-      <div className="mt-10 border-t pt-6 flex flex-wrap justify-center gap-4 sm:gap-6">
+      <div className="mt-10 border-t p-4 rounded-2xl flex flex-wrap justify-center gap-4 sm:gap-6 bg-pink-500">
         <a
           href="https://www.instagram.com"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-pink-500 hover:text-pink-700 text-xl sm:text-2xl transition-colors"
+          className="text-black hover:text-gray-600 text-xl sm:text-2xl transition-colors"
         >
           <FaInstagram />
         </a>
@@ -89,7 +96,7 @@ const Cradspage: React.FC = () => {
           href="https://www.facebook.com"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-pink-500 hover:text-pink-700 text-xl sm:text-2xl transition-colors"
+          className="text-black hover:text-gray-600 text-xl sm:text-2xl transition-colors"
         >
           <FaFacebookF />
         </a>
@@ -98,7 +105,7 @@ const Cradspage: React.FC = () => {
           href="https://www.tiktok.com"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-pink-500 hover:text-pink-700 text-xl sm:text-2xl transition-colors"
+          className="text-black hover:text-gray-600 text-xl sm:text-2xl transition-colors"
         >
           <FaTiktok />
         </a>
@@ -107,7 +114,7 @@ const Cradspage: React.FC = () => {
           href="https://www.twitter.com"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-pink-500 hover:text-pink-700 text-xl sm:text-2xl transition-colors"
+          className="text-black hover:text-gray-600 text-xl sm:text-2xl transition-colors"
         >
           <FaTwitter />
         </a>
